@@ -1,0 +1,15 @@
+/* TO DO */
+[data-elementor-device-mode="desktop"] .elementor-edit-area-active .elementor-hidden-desktop.elementor-section::before, 
+[data-elementor-device-mode="tablet"] .elementor-edit-area-active .elementor-hidden-tablet.elementor-section::before, 
+[data-elementor-device-mode="mobile"] .elementor-edit-area-active .elementor-hidden-phone.elementor-section::before {
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    z-index: 9;
+}
+
+.elementor-edit-area-active .elementor-element-overlay,
+/* .elementor-edit-area-active .elementor-add-section, */
+.elementor-edit-area-active .elementor-empty-view {
+    display: block;
+}
