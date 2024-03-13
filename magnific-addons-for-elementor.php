@@ -232,3 +232,14 @@ function mae_search_replace_db($from, $to) {
 function mae_clear_elementor_css_cache() {
 	error_log('run css clear cache');
 }
+
+// Checking for updates
+require 'plugin-update-checker/plugin-update-checker.php';
+	$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+		'https://github.com/MagnificSoft/magnific-addons-for-elementor',
+		__FILE__,
+		'MagnificAddons'
+	);
+
+
+	$myUpdateChecker->setBranch('main');

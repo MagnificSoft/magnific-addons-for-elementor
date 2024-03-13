@@ -370,16 +370,7 @@ add_filter( 'elementor/query/query_args', function( $args, $widget ) {
 }, 10, 2);
 
 
-// Checking for updates
-require 'plugin-update-checker/plugin-update-checker.php';
-	$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-		'https://github.com/MagnificSoft/magnific-addons-for-elementor',
-		__FILE__,
-		'MagnificAddons'
-	);
 
-
-	$myUpdateChecker->setBranch('main');
 
 
 
